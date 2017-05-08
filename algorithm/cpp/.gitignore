@@ -1,0 +1,6 @@
+LeetCode.VC.db
+LeetCode.VC.VC.opendb
+/Debug/*
+/*/Debug/*
+*.idb
+*.tlog
