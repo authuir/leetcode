@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3", "3\3.vcxproj", "{84ECBC05-9485-45A4-9EA8-7C5A750D002B}"
 EndProject
@@ -282,6 +282,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "538", "538\538.vcxproj", "{886DEF74-5591-496B-9813-AD227EF376CC}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "508", "508\508.vcxproj", "{7D649A86-418E-4A5A-9D3C-EEBF21CF1125}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "495", "495\495.vcxproj", "{2FA1C328-EC74-4828-BD80-96EF8AA70673}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -1720,6 +1722,16 @@ Global
 		{7D649A86-418E-4A5A-9D3C-EEBF21CF1125}.Release|x64.Build.0 = Release|x64
 		{7D649A86-418E-4A5A-9D3C-EEBF21CF1125}.Release|x86.ActiveCfg = Release|Win32
 		{7D649A86-418E-4A5A-9D3C-EEBF21CF1125}.Release|x86.Build.0 = Release|Win32
+		{2FA1C328-EC74-4828-BD80-96EF8AA70673}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{2FA1C328-EC74-4828-BD80-96EF8AA70673}.Debug|x64.ActiveCfg = Debug|x64
+		{2FA1C328-EC74-4828-BD80-96EF8AA70673}.Debug|x64.Build.0 = Debug|x64
+		{2FA1C328-EC74-4828-BD80-96EF8AA70673}.Debug|x86.ActiveCfg = Debug|Win32
+		{2FA1C328-EC74-4828-BD80-96EF8AA70673}.Debug|x86.Build.0 = Debug|Win32
+		{2FA1C328-EC74-4828-BD80-96EF8AA70673}.Release|Any CPU.ActiveCfg = Release|Win32
+		{2FA1C328-EC74-4828-BD80-96EF8AA70673}.Release|x64.ActiveCfg = Release|x64
+		{2FA1C328-EC74-4828-BD80-96EF8AA70673}.Release|x64.Build.0 = Release|x64
+		{2FA1C328-EC74-4828-BD80-96EF8AA70673}.Release|x86.ActiveCfg = Release|Win32
+		{2FA1C328-EC74-4828-BD80-96EF8AA70673}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
