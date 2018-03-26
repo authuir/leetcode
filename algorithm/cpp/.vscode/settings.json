@@ -1,7 +1,11 @@
 {
     "files.associations": {
         "iostream": "cpp",
-        "limits": "cpp"
+        "limits": "cpp",
+        "cmath": "cpp",
+        "ostream": "cpp",
+        "initializer_list": "cpp",
+        "string": "cpp"
     },
     "C_Cpp.intelliSenseEngineFallback": "Disabled"
 }
