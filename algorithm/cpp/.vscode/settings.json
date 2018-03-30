@@ -5,7 +5,9 @@
         "cmath": "cpp",
         "ostream": "cpp",
         "initializer_list": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "array": "cpp",
+        "utility": "cpp"
     },
     "C_Cpp.intelliSenseEngineFallback": "Disabled"
 }
