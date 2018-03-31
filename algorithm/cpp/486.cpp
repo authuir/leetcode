@@ -1,57 +1,65 @@
 #include <vector>
 #include <iostream>
+#include <cstring>
 
 using namespace std;
 
 class Solution {
+private:
+    int** dp = NULL;
+    int** sum = NULL;
+    int getDp(int i, int j, vector<int>& nums)
+    {
+        if (i > j || i<0 || j<0)
+            return 0;
+        else if (i == j)
+            return nums[i];
+        if (dp[i][j] != -1)
+            return dp[i][j];
+        dp[i][j] = getSum(i, j, nums) - min( getDp(i, j-1, nums), getDp(i+1, j, nums) );
+        return dp[i][j];
+    }
+    int getSum(int i, int j, vector<int>& nums)
+    {
+        if (i > j || i<0 || j<0)
+            return 0;
+        else if (i == j)
+            return nums[i];
+        if (sum[i][j] != -1)
+            return sum[i][j];
+        sum[i][j] = nums[i] + getSum(i+1, j, nums);
+        return sum[i][j];
+    }
 public:
     bool PredictTheWinner(vector<int>& nums) {
-        bool rtn = false;
-        int p1=0, p2=0;
-        while (nums.size()>0)
+        dp = new int*[nums.size()]; 
+        sum = new int*[nums.size()];
+        for (int i=0;i<nums.size();i++)
         {
-            if (nums.size() == 1)
+            dp[i] = new int[nums.size()];
+            sum[i] = new int[nums.size()];
+            for (int j=0;j<nums.size();j++)
             {
-                p1+=nums[0];
-                nums.erase(nums.begin());
+                dp[i][j] = -1;
+                sum[i][j] = -1;
             }
-            else if (nums.size() == 2)
-            {
-                p1+=max(nums[0],nums[1]);
-                p2+=min(nums[0],nums[1]);
-                nums.erase(nums.begin());
-                nums.erase(nums.begin());
-            }
-            else
-            {
-                if (nums[0]-max(nums[1],nums.back()) > nums.back()-max(nums[0],nums.at(nums.size()-2)))
-                {
-                    p1+=nums[0];
-                    if (nums[1]>nums.back())
-                    {
-                        p2+=nums[1];
-                        nums.erase(nums.begin()+1);
-                        nums.erase(nums.begin());
-                    }
-                    else
-                    {
-                        p2+=nums.back();
-                        nums.erase(nums.begin()+1);
-                        nums.erase(nums.begin());
-                    }
-                }
-            }
-            
         }
-
-        return p1>p2;
+        cout << "getSum " << getSum(0, nums.size()-1, nums) << endl;
+        cout << "getDp  " << getDp(0, nums.size()-1, nums) << endl;
+        
+        return getDp(0, nums.size()-1, nums) >= (getSum(0, nums.size()-1, nums) - getDp(0, nums.size()-1, nums));
+    }
+    ~Solution()
+    {
+        delete[] dp;
+        delete[] sum;
     }
 };
 
 int main()
 {
     Solution x;
-    vector<int> a{1,2,4,8,16,32,15,7,3};
-    x.PredictTheWinner(a);
+    vector<int> a{2,4,55,6,8};
+    cout << x.PredictTheWinner(a);
     return 0;
 }
