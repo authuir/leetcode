@@ -8,7 +8,9 @@
         "string": "cpp",
         "array": "cpp",
         "utility": "cpp",
-        "*.tcc": "cpp"
+        "*.tcc": "cpp",
+        "map": "cpp",
+        "unordered_map": "cpp"
     },
     "C_Cpp.intelliSenseEngineFallback": "Disabled"
 }
