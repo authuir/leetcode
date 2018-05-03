@@ -6,7 +6,7 @@
             "type": "shell",
             "command": "g++",
             "args": [
-                "-std=c++11", "-g", "650.cpp", "-o", "${workspaceFolder}/.vscode/a.exe"
+                "-std=c++11", "-g", "804.cpp", "-o", "${workspaceFolder}/.vscode/a.exe"
             ],
             "group": {
                 "kind": "build",
