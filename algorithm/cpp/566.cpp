@@ -26,7 +26,7 @@ public:
 			rtn.push_back(tmp);
 		return rtn;
 	}
-};
+}; 
 
 int main()
 {
