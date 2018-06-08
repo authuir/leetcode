@@ -30,7 +30,8 @@
         "tuple": "cpp",
         "type_traits": "cpp",
         "typeinfo": "cpp",
-        "sstream": "cpp"
+        "sstream": "cpp",
+        "vector": "cpp"
     },
     "C_Cpp.intelliSenseEngineFallback": "Disabled"
 }
