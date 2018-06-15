@@ -11,7 +11,3 @@ func numJewelsInStones(J string, S string) int {
 	}
 	return rtn
 }
-
-func main() {
-	numJewelsInStones("abcd", "abcdefg")
-}
