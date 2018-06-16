@@ -30,9 +30,3 @@ func flipAndInvertImage(A [][]int) [][]int {
 	}
 	return A
 }
-
-func main() {
-	var input [][]int
-	input = [][]int{{1, 1, 0}, {1, 0, 1}, {0, 0, 0}}
-	flipAndInvertImage(input)
-}
