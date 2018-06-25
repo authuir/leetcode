@@ -1,3 +1,4 @@
-/algorithm/cpp/.vscode/a.exe
-/algorithm/cpp/.vscode/tasks.json
-/algorithm/golang/debug
+algorithm/cpp/.vscode/a.exe
+algorithm/cpp/.vscode/tasks.json
+algorithm/golang/debug
+algorithm/golang/*.exe

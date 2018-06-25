@@ -30,6 +30,6 @@ func isRotated(N int) bool {
 	return rtn
 }
 
-func main() {
-	rotatedDigits(10)
-}
+// func main() {
+// 	rotatedDigits(10)
+// }
