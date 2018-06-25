@@ -31,7 +31,8 @@
         "type_traits": "cpp",
         "typeinfo": "cpp",
         "sstream": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "deque": "cpp"
     },
     "C_Cpp.intelliSenseEngineFallback": "Disabled"
 }
