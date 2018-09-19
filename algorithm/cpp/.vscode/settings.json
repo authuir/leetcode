@@ -32,7 +32,9 @@
         "typeinfo": "cpp",
         "sstream": "cpp",
         "vector": "cpp",
-        "deque": "cpp"
+        "deque": "cpp",
+        "algorithm": "cpp",
+        "list": "cpp"
     },
     "C_Cpp.intelliSenseEngineFallback": "Disabled"
 }
