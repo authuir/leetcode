@@ -171,7 +171,7 @@ int main()
     // InsertSort(arr);
     // ShellSort(arr);
     // HeapSort(arr);
-    MergeSort(arr, 0, arr.size()-1);
+    // MergeSort(arr, 0, arr.size()-1);
     for (auto iter : arr) {
         cout << iter << " ";
     }
